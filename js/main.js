@@ -37,7 +37,7 @@ fbResults = [];
 
 
 for (let i=1; i<= maxNumber; i++){
-        if (i % 15 === 0){
+        if ((i % 5 === 0) && (i % 3 ===0)){
         fbResults.push('fizzbuzz');
     }
     else if (i % 3 === 0) {
