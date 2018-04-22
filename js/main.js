@@ -23,19 +23,18 @@ fbResults = [];
 
 for (let i=1; i<= maxNumber; i++){
         if ((i % 5 === 0) && (i % 3 ===0)){
-        fbResults.push('fizzbuzz');
+        fbResults.push('FizzBuzz');
     }
     else if (i % 3 === 0) {
-        fbResults.push('fizz');        
+        fbResults.push('Fizz');        
     }
     else if (i % 5 === 0) {
-        fbResults.push('buzz');
+        fbResults.push('Buzz');
     }
     else fbResults.push(i); 
 }
 
 fbText = "";
-
 
 for (let result of fbResults) {
     fbText = fbText + result + "\n";
