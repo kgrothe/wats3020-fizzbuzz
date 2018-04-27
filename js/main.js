@@ -13,26 +13,28 @@ while (isInteger == false){
     
     maxNumber = parseFloat(maxNumber); //convert string to number
     
-    if (Number.isSafeInteger(maxNumber, 10) && maxNumber > 0) //check if whole number AND greater than 0
-    isInteger = true;               
-        
-    else alert ('Sorry, that is not a valid number. Please try again.');
+    if (Number.isSafeInteger(maxNumber, 10) && maxNumber > 0) { //check if whole number AND greater than 0
+        isInteger = true;               
+    } else {
+        alert ('Sorry, that is not a valid number. Please try again.');
+    }
 }
 
 fbResults = [];
 
 for (let i=1; i<= maxNumber; i++){
-        if ((i % 5 == 0) && (i % 3 ==0)){
+     if ((i % 5 == 0) && (i % 3 ==0)){
         fbResults.push('FizzBuzz');
-    }
-    else if (i % 3 == 0) {
+    } else if (i % 3 == 0) {
         fbResults.push('Fizz');        
-    }
-    else if (i % 5 == 0) {
+    } else if (i % 5 == 0) {
         fbResults.push('Buzz');
-    }
-    else fbResults.push(i); 
-}
+    } else {
+        fbResults.push(i); 
+    }    
+ }  
+
+
 
 fbText = "";
 
